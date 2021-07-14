@@ -1,0 +1,383 @@
+ /*-------Main Body---------*/
+ body{
+    margin: 0;
+    margin-left: 0;
+    background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*-------Header starts---------*/
+.header-container{
+   position:relative;
+    width: 100%;
+    height: 700px;
+    background: #2D25A0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+/*------- Navigation Bar ---------*/
+.nav-bar{
+    position: relative;
+    height: 80px;
+    width: 80%;
+    border: 2px solid #2D25A0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+/*------- Menu Item List---------*/v
+.menu{
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+}
+/*-------Menu Item Fonts ---------*/
+.menu-list{
+    color: #F3F1FF;
+    font-size: 20px;
+    text-decoration:none;
+    margin-right: 25px;
+   
+}
+/*------- Login Button ---------*/
+.login-box{
+    position: relative;
+    border: 10px solid #E02C6D;
+    background-color: #E02C6D;
+    height: 25px;
+    width: 100px;
+    margin-right: 40px;
+    align-items: center;
+    text-decoration:none;
+}
+/*------- Login Button fonts ---------*/
+.login-element{
+    font-size: 20px;
+    color: #F3F1FF;
+    text-decoration:none;
+    margin-right: 10px;
+    
+}
+/*-------Header Caption with Banner (using Half Width)---------*/
+
+.header-text-banner{
+    display: flex;
+    position: relative;
+    border: 2px solid #2D25A0;
+    height: 80%;
+    width: 80%;
+    margin-bottom: 40px;
+    
+}
+
+/*-------For both Banner and Caption---------*/
+.half-width{
+ width:60%;
+ height: 80%;
+ padding:3%;
+}
+/*------- Banner Animation---------*/
+@keyframes tilting-image{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+.half-width-img{
+    width:85%;
+    height:110%;
+    animation:tilting-image 5s ease-in-out 0s infinite alternate;
+   
+}
+/*-------  Header Caption---------*/
+#header-caption{
+    font-size: 70px;
+    font-weight: 700;
+    color: #F3F1FF;
+    padding-right: 100px;
+}
+
+/*------- Watch Live Button---------*/
+   .watch-live-button{
+    position: relative;
+   
+    background-color: #E02C6D;
+    width:25%;
+    height: 10%;
+    padding:10px, 24px, 10px, 24px;
+    color:white;
+    display: flex;
+    align-items:center;
+    margin-top:-30px;
+    cursor: pointer;
+    
+}
+/*------- Watch Live Button elements---------*/
+    .watch-icon{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration:none;
+    color:white;
+    margin-right:10px;
+    margin-left:10px;
+}
+  /*------- Watch Live Button Hover Transformation ---------*/ 
+    .flexible-container:hover .watch-live-button {
+    border: 2x solid white;
+    border-radius: 15px;
+    height: 20%;
+    width: 35%;
+}
+
+    .flexible-container:hover .watch-icon{
+    font-size: 25px;
+ }
+ /*------- Header Ends ---------*/
+
+
+
+ /*------- Main Body Players Images------*/
+ 
+  /*---------For Whole main body-----------*/
+ .player-section{
+     display: flex;
+     justify-content: center;
+ }
+ /*---------For Whole All Players-----------*/
+ .all-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/*---------For each player info box-----------*/
+.player{
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: rgba(106, 106, 114, 0.2) 10px 10px 29px 10px;
+    width: 330px;
+    height: 470px;
+    margin-top: 30px;
+    margin-left:8px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    
+    
+}
+/*---------For images in each player info box-----------*/
+.player img{
+    width: 300px;
+    height:260px;
+    margin-top: 15px;
+    margin-left:13px;
+    
+}
+.player-detail{
+    margin-left:13px;
+}
+.player-name{
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.player-info{
+    margin-top:-10px;
+    font-size:15px;
+    color:gray;
+}
+
+/*---------Main Body Player Images Ends here-----------*/
+
+/*---------Highlights Section-----------*/
+
+/*---------For the whole section divided in two column-----------*/
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    
+}
+
+/*---------For left Side highlights Tittle-----------*/
+.highlights-text{
+    margin-left: 380px;
+    font-size: 35px;
+}
+.highlights-paragraph{
+    font-size: 15px;
+    color: grey;
+}
+/*---------For the Button in Highlights Tittle-----------*/
+.button{
+   border:5px solid #E02C6D;
+   background-color: #E02C6D;
+   padding: 20px;
+   color: #F3F1FF;
+   font-size: 15px;
+   text-decoration: none;
+  
+   
+
+}
+/*---------For the image in right side-----------*/
+.highlights-image img{
+    height: 430px;
+    width: 570px;
+}
+
+/*---------Highlights Section ends here-----------*/
+
+/*---------Footer-----------*/
+
+.footer{
+    display: grid;
+    grid-template-rows:160px 50px 50px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/*---------Footer logo image-----------*/
+.footer-logo img {
+ height: 150px;
+ width: 350px;
+}
+/*---------Footer Social Media Icon-----------*/
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.sm-icon{
+    font-size: 25px;
+    margin-left: 3px;
+    margin-right: 20px;
+    color: grey;
+
+}
+
+/*---------Footer Copyright-----------*/
+.copyright{
+    margin-top: 0;
+    padding-left: 60px;
+    margin-left: 10px;
+    
+}
+
+/*---------Footer ends here-----------*/
+
+
+
+
+
+/*----------------------- Media Query Stats Here ----------------------*/
+
+
+
+
+ /*------- Header starts ---------*/
+ @media screen and (max-width: 600px) {
+    .header-container {
+      width: 100%;
+       }
+     .nav-bar{
+            display: none;
+        }
+    .menu{
+            display: none;
+           }
+    .menu-list{
+         display:none;
+           }
+     
+      #header-caption{
+        margin-top: 50px;
+        margin-left: 30px;
+        font-size: 25px;
+        font-weight: 800;
+        color: #F3F1FF;
+       
+    }
+    .watch-live-button{
+        position: relative;
+        background-color: #E02C6D;
+        width:100px;
+        height: 40px;
+        padding:10px, 24px, 10px, 24px;
+        margin-left: 30px;
+        color:white;
+        display: flex;
+        align-items:center;
+        margin-top:-10px;
+        
+        
+    }
+    .watch-icon{
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration:none;
+        color:white;
+        margin-right:3px;
+        margin-left:3px;
+    }
+      .half-width-img{
+          height: 250px;
+          width: 345px;
+          margin-left: -230px;
+          margin-top: 320px;
+      }
+
+/*------- Header Ends ---------*/
+
+/*------- Main Body  ---------*/
+.all-players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlights{
+    display: flex;
+    flex-direction: column;
+}
+.player{
+  align-items: center;
+}
+
+/*--------- Main Body  ends here-----------*/
+
+/*--------Highlight Section starts here--------*/
+
+
+.highlights-text{
+    margin-left:50px;
+    margin-bottom:40px;
+}
+.highlights-image{
+ margin-left:20px;
+}
+.highlights-image img{
+    width:320px;
+}
+
+
+/*---------Footer starts here-----------*/
+
+.footer{
+    margin-left: -15px;
+}
+
+}
+/*---------Footer ends here-----------*/
